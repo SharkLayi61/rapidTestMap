@@ -34,15 +34,13 @@ xhr.onload = function () {
   for (var i = 0; i < data.length; i++) {
     //將藥局標記不同顏色的圖標
     var imageIcon = new L.Icon({
-      iconUrl:
-        "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png",
-      shadowUrl:
-        "https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png",
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [1, -34],
-      shadowSize: [41, 41]
-    });
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
 
     var markers = new L.MarkerClusterGroup({
       iconCreateFunction: function (cluster) {
@@ -86,6 +84,9 @@ xhr.onload = function () {
         "<p/>" +
         '<p class="popup-phone">[電話] ' +
         data[i].電話 +
+        "<p/>" +
+      '<p class="popup-address">[地址] ' +
+        data[i].地址 +
         "<p/>" +
         '<a href="https://www.google.com.tw/maps/search/' +
         val +
