@@ -25,7 +25,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 var xhr = new XMLHttpRequest();
 xhr.open(
   "get",
-  "https://raw.githubusercontent.com/SharkLayi61/vaccineMap/main/%E6%8C%87%E5%AE%9A%E6%8E%A1%E6%AA%A2%E9%86%AB%E9%99%A2%E6%B8%85%E5%96%AE.json"
+  "https://raw.githubusercontent.com/SharkLayi61/rapidTestMap/main/%E6%8C%87%E5%AE%9A%E6%8E%A1%E6%AA%A2%E9%86%AB%E9%99%A2%E6%B8%85%E5%96%AE.json"
 );
 xhr.send();
 xhr.onload = function () {
